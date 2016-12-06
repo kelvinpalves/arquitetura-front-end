@@ -61,7 +61,9 @@ A estrutura acima demonstra de forma simples como modularizar as funcionalidades
 ### sub-módulos
 
 Deverão ser criados muitos módulos pequenos e independentes, ou seja, cada funcionalidade do sistema deverá se tornar um módulo.
+
 Trabalhando desta forma, a aplicação se torna modular e de fácil acoplamento, nos permitindo trabalhar de forma híbrida e construindo fatias verticais da aplicação.
+
 Seguindo esta linha de desenvolvimento, podemos finalizar as funcionalidades e ir juntando tudo de forma incremental, reduzindo ao máximo o nível de dependência entre os artefatos do sistema.
 
 **Exemplo de Modularização:**

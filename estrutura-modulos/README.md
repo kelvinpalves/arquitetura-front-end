@@ -118,5 +118,3 @@ angular.module('app.relatorios.relatorio01', []);
 angular.module('app.relatorios.relatorio02', []);
 angular.module('app.relatorios.relatorio03', []);
 ```
-
-Dúvidas e sugestões em: kelinpalves@gmail.com

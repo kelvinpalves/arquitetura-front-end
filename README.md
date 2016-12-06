@@ -1,5 +1,9 @@
 # Arquitetura Front-End
 
+Antes de utilizar esta estrutura leia este guia de estilo:
+
+[Guia de Estilo AngularJS](https://github.com/johnpapa/angular-styleguide/blob/master/a1/i18n/pt-BR.md)
+
 Repositório para definir um padrão de desenvolvimento front-end.
 
 **Itens definidos no repositório:**

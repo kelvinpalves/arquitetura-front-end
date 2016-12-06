@@ -12,7 +12,7 @@ Abaixo a lista de módulos que deverão ser criados ao iniciar o desenvolvimento
 
 Deverá ser criado um módulo raiz para a aplicação, este módulo será o responsável por reunir as diversas funcionalidades do sistema.
 
-O nome do módulo deverá ser efetuado conforme a sua aplicação.
+O módulo deverá ser nomeado de acordo com a sua aplicação.
 
 **Exemplos:**
 

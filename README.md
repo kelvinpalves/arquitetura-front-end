@@ -10,7 +10,7 @@ Repositório para definir um padrão de desenvolvimento front-end.
 
 * Autenticação (Token e RefreshToken)
 * Estrutura de Pastas
-* Estrutura de Módulos
+* [Estrutura de Módulos](https://github.com/kelvinpalves/arquitetura-front-end/tree/master/estrutura-modulos)
 * Internacionalização (Ver opções)
 * Padrão Controller (Boas Práticas)
 * Padrão Directive (Boas Práticas)

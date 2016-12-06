@@ -24,3 +24,5 @@ Repositório para definir um padrão de desenvolvimento front-end.
 * Tema da Interface (AdminLTE)
 * Testes (Ver opções)
 * Utils (Message, Promises, etc)
+
+> Esse repositório contém uma **SUGESTÃO** de arquitetura.

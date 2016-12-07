@@ -9,7 +9,7 @@ Repositório para definir um padrão de desenvolvimento front-end.
 **Itens definidos no repositório:**
 
 * Autenticação (Token e RefreshToken)
-* Estrutura de Pastas
+* [Estrutura de Pastas e Nomenclatura de Arquivos](https://github.com/kelvinpalves/arquitetura-front-end/tree/master/estrutura-pastas)
 * [Estrutura de Módulos](https://github.com/kelvinpalves/arquitetura-front-end/tree/master/estrutura-modulos)
 * Internacionalização (Ver opções)
 * Padrão Controller (Boas Práticas)

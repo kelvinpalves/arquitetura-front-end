@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<title>Padrões de Código</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<div ng-controller="Exemplo as vm">
+		<input type="text" ng-model="vm.numero1" >
+		<input type="text" ng-model="vm.numero2" >
+		<button ng-click="vm.executarSoma()">Calcular</button>
+		<span>Resultado: {{ vm.resultado }}</span>
+	</div>
+
+	<!-- vendor -->
+	<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+
+	<!-- module -->
+	<script type="text/javascript" src="app.module.js"></script>
+	<script type="text/javascript" src="somar.factory.js"></script>
+	<script type="text/javascript" src="exemplo.controller.js"></script>
+</body>
+</html>

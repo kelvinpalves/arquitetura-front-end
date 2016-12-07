@@ -46,3 +46,137 @@ A criação de uma view para expor dos dados do cliente.
 Ao invés de criar um arquivo cliente-view.html, deverá ser criado o arquivo cliente.html, pois no tipo do arquivo já está explicito a sua função.
 
 > Para aplicar esta regra é necessário analisar se o tipo não possui uma convenção pré definida.
+
+### **Nomenclatura**
+
+Para um fácil entendimento por parte do desenvolvedor, é necessário a utilização de nomes consistentes para todos os componentes, de forma que seja possível descrever o seu tipo e funcionalidade.
+
+**Padrão:**
+
+* caracteristica.tipo.js
+
+
+Tipo | Nome do Arquivo | Nome da Função
+------|-------|---------
+Configuration | loading.config.js | loading
+Constants | info.constants.js | info
+Controller | cliente.controller.js | Cliente
+Directive | elemento-teste.directive.js | elementoTeste
+Factory | formatar-numero.factory.js | formatarNumero
+Module | cliente.module.js | app.cliente (Ver estrutura de módulos)
+Route Configuration | teste.route.js | teste
+Service | exemplo.service.js | exemplo
+
+**Exemplo Configuration:**
+
+Configuração de loading no módulo raiz.
+
+Nome do arquivo: loading.config.js
+
+```js
+angular
+	.module('app')
+	.config(loading);
+
+function loading() {
+}
+```
+
+**Exemplo Constants:**
+
+Constantes com informações do sistema.
+
+Nome do arquivo: info.constants.js 
+
+```js
+var info = {
+	version: 1.0.0,
+	titleDefault: 'Title'
+};
+
+angular
+	.module('app')
+	.constant(info);
+```
+
+**Exemplo Controller**
+
+Nome do arquivo: cliente.controller.js
+
+```js 
+angular 
+	.module('app.cliente')
+	.controller('Cliente');
+
+function Cliente() {
+}
+```
+
+**Exemplo Directive**
+
+Nome do arquivo: elemento-teste.directive.js
+
+```js 
+angular 
+	.module('app.layout')
+	.directive('elementoTeste');
+
+function elementoTeste() {
+}
+```
+
+```html 
+
+<elemento-teste></elemento-teste>
+<div elemento-teste></div>
+
+```
+
+**Exemplo Factory**
+
+Nome do arquivo: formatar-numero.factory.js 
+
+```js 
+angular 
+	.module('core.utils')
+	.directive('formatarNumero');
+
+function formatarNumero() {
+}
+```
+
+**Exemplo Module**
+
+Nome do arquivo: cliente.module.js
+
+```js 
+angular.module('app.cliente', []);
+```
+
+**Exemplo Route Configuration**
+
+Nome do arquivo: teste.route.js
+
+```js 
+angular
+	.module('app')
+	.config(teste);
+
+	teste.$inject = ['$routeProvider', '$locationProvider'];
+
+function teste($routeProvider, $locationProvider) {
+}
+```
+
+**Exemplo Service**
+
+Nome do arquivo: exemplo.service.js
+
+```js 
+angular 
+	.module('app')
+	.service('exemplo');
+
+function exemplo() {
+}
+```

@@ -57,4 +57,8 @@ Criar uma diretiva por arquivo, o nome do arquivo deverá ser de acordo com a su
 
 Utilize diretivas quando não houver uma forma alternativa para manipulação do DOM. Exemplo, dê preferência para ngShow/ngHide, CSS, etc...
 
+**Prefixo por categoria**
+
+Utilize prefixos para identificar o contexto e a origem da diretiva.
+
 > Obs.: Existem muitas diretivas úteis na web, pense antes de recriar a roda. :)

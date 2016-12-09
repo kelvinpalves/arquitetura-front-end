@@ -12,7 +12,7 @@ Repositório para definir um padrão de desenvolvimento front-end.
 * [Estrutura de Pastas e Nomenclatura de Arquivos](https://github.com/kelvinpalves/arquitetura-front-end/tree/master/estrutura-pastas)
 * [Estrutura de Módulos](https://github.com/kelvinpalves/arquitetura-front-end/tree/master/estrutura-modulos)
 * Internacionalização (Ver opções)
-* Padrão Controller (Boas Práticas)
+* [Padrão Controller (Boas Práticas)](https://github.com/kelvinpalves/arquitetura-front-end/tree/master/padroes-codigo#controller)
 * Padrão Directive (Boas Práticas)
 * Padrão Factory (Boas Práticas)
 * Padrão Interface (Lista, Formulário)

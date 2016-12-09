@@ -9,7 +9,7 @@
 	Exemplo.$inject = ['somar'];
 
 	function Exemplo (somar) {
-
+		/* jshint validthis: true */
 		var vm = this;
 
 		vm.numero1;

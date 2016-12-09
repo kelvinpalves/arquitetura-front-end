@@ -32,3 +32,17 @@ Não utilizar o controller para efetuar manipulações no DOM, para isso utilize
 
 *	[Guia de estilo](https://github.com/johnpapa/angular-styleguide/blob/master/a1/i18n/pt-BR.md#controllers)
 *	[Dicas](https://johnpapa.net/angular-function-declarations-function-expressions-and-readable-code)
+
+### Factory
+
+**Responsabilidade Única**
+
+Uma factory deve ter uma única responsabilidade, assim que começar a exceder esta proposta, uma nova factory deverá ser criada.
+
+**Funções acessíveis no topo**
+
+Manter as funções que podem ser invocadas no topo, desta forma fica fácil identificar a função do serviço.
+
+**Links**
+
+*	[Dica de Leitura](https://addyosmani.com/resources/essentialjsdesignpatterns/book/#revealingmodulepatternjavascript)

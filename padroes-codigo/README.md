@@ -46,3 +46,15 @@ Manter as funções que podem ser invocadas no topo, desta forma fica fácil ide
 **Links**
 
 *	[Dica de Leitura](https://addyosmani.com/resources/essentialjsdesignpatterns/book/#revealingmodulepatternjavascript)
+
+### Directive
+
+**Limite 1 por Arquivo**
+
+Criar uma diretiva por arquivo, o nome do arquivo deverá ser de acordo com a sua função.
+
+**Limite a manipulação do DOM**
+
+Utilize diretivas quando não houver uma forma alternativa para manipulação do DOM. Exemplo, dê preferência para ngShow/ngHide, CSS, etc...
+
+> Obs.: Existem muitas diretivas úteis na web, pense antes de recriar a roda. :)

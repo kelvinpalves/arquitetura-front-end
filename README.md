@@ -4,9 +4,7 @@ Antes de utilizar esta estrutura leia este guia de estilo:
 
 [Guia de Estilo AngularJS](https://github.com/johnpapa/angular-styleguide/blob/master/a1/i18n/pt-BR.md)
 
-Repositório para definir um padrão de desenvolvimento front-end.
-
-**Itens definidos no repositório:**
+Repositório para definir o padrão de desenvolvimento front-end.
 
 * Autenticação (Token e RefreshToken)
 * [Estrutura de Pastas e Nomenclatura de Arquivos](https://github.com/kelvinpalves/arquitetura-front-end/tree/master/estrutura-pastas)
@@ -21,7 +19,7 @@ Repositório para definir um padrão de desenvolvimento front-end.
 * Sistema de Permissões (Menu e Acesso a Telas)
 * Tarefas Automatizadas (Gulp)
 * Tema da Interface (AdminLTE)
-* Testes (Ver opções)
+* [Testes (Unit, E2E)](https://github.com/kelvinpalves/arquitetura-front-end/tree/master/tests)
 * Utils (Message, Promises, etc)
 
 > Esse repositório contém uma **SUGESTÃO** de arquitetura.

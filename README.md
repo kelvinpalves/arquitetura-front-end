@@ -18,7 +18,7 @@ Repositório para definir o padrão de desenvolvimento front-end.
 * Serviços HTTP (POST, PUT, GET, DELETE)
 * Sistema de Permissões (Menu e Acesso a Telas)
 * Tarefas Automatizadas (Gulp)
-* Tema da Interface (AdminLTE)
+* [Dicas de Interface (AdminLTE)](https://github.com/kelvinpalves/arquitetura-front-end/tree/master/interface)
 * [Testes (Unit, E2E)](https://github.com/kelvinpalves/arquitetura-front-end/tree/master/tests)
 * Utils (Message, Promises, etc)
 

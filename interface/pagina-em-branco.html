@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Sistema | Funcionalidade</title>
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <link rel="stylesheet" href="bower_components/AdminLTE/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+        <link rel="stylesheet" href="bower_components/AdminLTE/dist/css/AdminLTE.min.css">
+        <link rel="stylesheet" href="bower_components/AdminLTE/dist/css/skins/_all-skins.min.css">
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body class="hold-transition skin-blue sidebar-mini">
+        <div class="wrapper">
+            <header class="main-header">
+                <a href="bower_components/AdminLTE/index2.html" class="logo">
+                    <span class="logo-mini">NS</span>
+                    <span class="logo-lg"><b>NOME SISTEMA</b></span>
+                </a>
+                <nav class="navbar navbar-static-top">
+                    <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <div class="navbar-custom-menu">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown notifications-menu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fa fa-bell-o"></i>
+                                    <span class="label label-warning">10</span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="header">Você possui 10 notificações</li>
+                                    <li>
+                                        <ul class="menu">
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa fa-users text-aqua"></i> Notificação 01
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa fa-phone text-aqua"></i> Notificação 02
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa fa-tasks text-aqua"></i> Notificação 03
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="footer"><a href="#">Ver todas</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown user user-menu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <img src="bower_components/AdminLTE/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+                                    <span class="hidden-xs">Nome do usuário</span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="user-header">
+                                        <img src="bower_components/AdminLTE/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                                        <p>Nome do usuário - Cargo</p>
+                                    </li>
+                                    <li class="user-footer">
+                                        <div class="pull-left">
+                                            <a href="#" class="btn btn-default btn-flat">Configurações</a>
+                                        </div>
+                                        <div class="pull-right">
+                                            <a href="#" class="btn btn-default btn-flat">Sair</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <aside class="main-sidebar">
+                <section class="sidebar">
+                    <form action="#" method="get" class="sidebar-form">
+                        <div class="input-group">
+                            <input type="text" name="q" class="form-control" placeholder="Pesquisar">
+                            <span class="input-group-btn">
+                                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                        </div>
+                    </form>
+                    <ul class="sidebar-menu">
+                        <li class="header">MENU</li>
+                        <li class="treeview">
+                            <a href="#">
+                                <i class="fa fa-share"></i> <span>Relatórios</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li>
+                                    <a href="#"><i class="fa fa-circle-o"></i>Financeiro
+                                        <span class="pull-right-container">
+                                            <i class="fa fa-angle-left pull-right"></i>
+                                        </span>
+                                    </a>
+                                    <ul class="treeview-menu">
+                                        <li><a href="#"><i class="fa fa-circle-o"></i>Entrada</a></li>
+                                        <li>
+                                            <a href="#"><i class="fa fa-circle-o"></i>Saída
+                                                <span class="pull-right-container">
+                                                    <i class="fa fa-angle-left pull-right"></i>
+                                                </span>
+                                            </a>
+                                            <ul class="treeview-menu">
+                                                <li><a href="#"><i class="fa fa-circle-o"></i>Fixos</a></li>
+                                                <li><a href="#"><i class="fa fa-circle-o"></i>Variáveis</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#"><i class="fa fa-circle-o"></i>Compras</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="fa fa-circle-o"></i><span>Exemplo</span></a></li>
+                    </ul>
+                </section>
+            </aside>
+            <div class="content-wrapper">
+                <section class="content-header">
+                    <h1>Página em Branco</h1>
+                    <ol class="breadcrumb">
+                        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+                        <li><a href="#">Exemplo</a></li>
+                        <li class="active">Página em Branco</li>
+                    </ol>
+                </section>
+                <section class="content">
+                </section>
+            </div>
+            <footer class="main-footer">
+                <div class="pull-right hidden-xs"><b>Versão</b> 1.0.0</div>
+                <strong>Copyright &copy; 2016-2017 Nome da Empresa</a>.</strong> Todos os direitos reservados.
+            </footer>
+            <div class="control-sidebar-bg"></div>
+        </div>
+        <script src="bower_components/AdminLTE/plugins/jQuery/jquery-2.2.3.min.js"></script>
+        <script src="bower_components/AdminLTE/bootstrap/js/bootstrap.min.js"></script>
+        <script src="bower_components/AdminLTE/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+        <script src="bower_components/AdminLTE/plugins/fastclick/fastclick.js"></script>
+        <script src="bower_components/AdminLTE/dist/js/app.min.js"></script>
+        <script src="bower_components/AdminLTE/dist/js/demo.js"></script>
+    </body>
+</html>

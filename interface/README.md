@@ -56,7 +56,12 @@ Deverá ser desenvolvido retornando apenas o que está visível na página atual
 
 Plugin utilizado: [angular-datatables](https://l-lin.github.io/angular-datatables/)
 
+## Formulário 
+
+![Exemplo de Imagem Com Formulário](https://github.com/kelvinpalves/arquitetura-front-end/blob/master/interface/imagens/pagina-formulario.png "Exemplo de Imagem com Formulário")
+
 ## Exemplos Desenvolvidos
 
-*	Página em branco
+*	Página em Branco
+*	Página com Formulário
 *	Página com Lista

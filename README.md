@@ -13,12 +13,11 @@ Repositório para definir o padrão de desenvolvimento front-end.
 * [Padrão Controller (Boas Práticas)](https://github.com/kelvinpalves/arquitetura-front-end/tree/master/padroes-codigo#controller)
 * [Padrão Directive (Boas Práticas)](https://github.com/kelvinpalves/arquitetura-front-end/tree/master/padroes-codigo#directive)
 * [Padrão Factory (Boas Práticas)](https://github.com/kelvinpalves/arquitetura-front-end/tree/master/padroes-codigo#factory)
-* Padrão Interface (Lista, Formulário)
+* [Padrão Interface (Lista, Formulário, Menu)](https://github.com/kelvinpalves/arquitetura-front-end/tree/master/interface)
 * Routes e States (Definir qual será utilizado)
 * Serviços HTTP (POST, PUT, GET, DELETE)
 * Sistema de Permissões (Menu e Acesso a Telas)
 * Tarefas Automatizadas (Gulp)
-* [Dicas de Interface (AdminLTE)](https://github.com/kelvinpalves/arquitetura-front-end/tree/master/interface)
 * [Testes (Unit, E2E)](https://github.com/kelvinpalves/arquitetura-front-end/tree/master/tests)
 * Utils (Message, Promises, etc)
 

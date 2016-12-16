@@ -28,7 +28,7 @@ Menu de navegação no lado esquerdo da página exibindo somente os ícones. (Ot
 
 ## Página com Lista
 
-![Exemplo de Imagem Com Lista](https://github.com/kelvinpalves/arquitetura-front-end/blob/master/interface/imagens/menu.png "Exemplo de Imagem com Lista")
+![Exemplo de Imagem Com Lista](https://github.com/kelvinpalves/arquitetura-front-end/blob/master/interface/imagens/pagina-com-lista.png "Exemplo de Imagem com Lista")
 
 Está tela será a padrão para listar os registros de uma CRUD.
 

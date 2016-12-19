@@ -1,0 +1,5 @@
+{
+	"css": "./src/app/layout/style.css",
+	"cssMin": "style.min.css",
+	"buildCss": "./src/app/layout/"
+}

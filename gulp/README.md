@@ -4,9 +4,23 @@
 
 Módulo gulp para remover arquivos e diretórios.
 
-**Exemplo de Uso:**
+**Código:**
 
-**Retorno:**
+```js 
+var del = require('del');
+
+gulp.task('exemploDeleteFilesFolder', exemploDeleteFilesFolder);
+
+function exemploDeleteFilesFolder() {
+	del(paths.build);
+}
+```
+
+**Exemplo de Execução:**
+
+```shell 
+gulp exemploDeleteFilesFolder
+```
 
 ### [gulp-autoprefixer](https://www.npmjs.com/package/gulp-autoprefixer)
 

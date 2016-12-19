@@ -34,9 +34,54 @@ Módulo gulp para adicionar os prefixos dos rederizadores CSS.
 
 Módulo gulp para concatenar arquivos.
 
-**Exemplo de Uso:**
+**Entrada:**
+
+exemplo01.css
+
+```css 
+h1 {
+	color: red;
+}
+```
+
+exemplo02.css 
+
+```css 
+p {
+	color: red;
+}
+```
+
+**Código:**
+
+```js 
+var concat = require('gulp-concat');
+
+gulp.task('exemploGulpConcat', exemploGulpConcat);
+
+function exemploGulpConcat() {
+	gulp.src([].concat(paths.concat))
+		.pipe(concat('all.min.css'))
+		.pipe(gulp.dest(paths.build));
+}
+```
+
+**Exemplo de Execução:**
+
+```shell 
+gulp exemploGulpConcat
+```
 
 **Retorno:**
+
+```css 
+h1 {
+	color: red;
+}
+p {
+	color: red;
+}
+```
 
 ### [gulp-jshint](https://www.npmjs.com/package/gulp-jshint)
 

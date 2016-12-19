@@ -1,5 +1,7 @@
 {
+	"concat": "./src/app/layout/concat/*.css",
 	"css": "./src/app/layout/style.css",
+	"cssAutoprefixer": "./src/app/layout/autoprefixer.css",
 	"cssMin": "style.min.css",
 	"buildCss": "./build/",
 	"build": "./build/"

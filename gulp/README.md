@@ -87,9 +87,44 @@ p {
 
 Módulo gulp para verificar erro em arquivos JavaScript.
 
-**Exemplo de Uso:**
+**Entrada:**
+
+```js 
+function teste() {
+	var x = 10
+}
+```
+
+**Código:**
+
+```js 
+var jshint = require('gulp-jshint');
+
+gulp.task('exemploGulpJshint', exemploGulpJshint);
+
+function exemploGulpJshint() {
+	gulp.src(paths.jshint)
+		.pipe(jshint())
+		.pipe(jshint.reporter('default'));
+}
+```
+
+**Exemplo de Execução:**
+
+```shell
+gulp exemploGulpJshint
+```
 
 **Retorno:**
+
+```shell 
+[10:37:17] Using gulpfile /var/www/arquitetura-front-end/gulp/gulpfile.js
+[10:37:17] Starting 'exemploGulpJshint'...
+[10:37:17] Finished 'exemploGulpJshint' after 14 ms
+src/app/jshint/exemplo.js: line 2, col 15, Missing semicolon.
+
+1 error
+```
 
 ### [gulp-livereload](https://www.npmjs.com/package/gulp-livereload)
 

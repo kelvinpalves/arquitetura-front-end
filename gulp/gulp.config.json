@@ -4,5 +4,6 @@
 	"cssAutoprefixer": "./src/app/layout/autoprefixer.css",
 	"cssMin": "style.min.css",
 	"buildCss": "./build/",
-	"build": "./build/"
+	"build": "./build/",
+	"jshint": "./src/app/jshint/exemplo.js"
 }

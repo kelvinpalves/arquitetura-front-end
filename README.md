@@ -17,7 +17,7 @@ Repositório para definir o padrão de desenvolvimento front-end.
 * Routes e States (Definir qual será utilizado)
 * Serviços HTTP (POST, PUT, GET, DELETE)
 * Sistema de Permissões (Menu e Acesso a Telas)
-* Tarefas Automatizadas (Gulp)
+* [Tarefas Automatizadas (Gulp)](https://github.com/kelvinpalves/arquitetura-front-end/tree/master/gulp)
 * [Testes (Unit, E2E)](https://github.com/kelvinpalves/arquitetura-front-end/tree/master/tests)
 * Utils (Message, Promises, etc)
 

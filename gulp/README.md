@@ -1,5 +1,33 @@
 # Tarefas Automatizadas
 
+### [browser-sync](https://www.browsersync.io/)
+
+Módulo gulp para atualizar o browser ao editar um arquivo.
+
+**Código:**
+
+```js
+var browserSync = require('browser-sync').create();
+
+gulp.task('exemploGulpBrowserSync', exemploGulpBrowserSync);
+
+function exemploGulpBrowserSync() {
+	browserSync.init({
+		server: {
+			baseDir: './'
+		}
+	});
+
+	gulp.watch('index.html').on('change', browserSync.reload);
+}
+```
+
+**Exemplo de Execução:**
+
+```shell 
+gulp exemploGulpBrowserSync
+```
+
 ### [delete-files-folder](https://github.com/gulpjs/gulp/blob/master/docs/recipes/delete-files-folder.md)
 
 Módulo gulp para remover arquivos e diretórios.
@@ -126,14 +154,6 @@ src/app/jshint/exemplo.js: line 2, col 15, Missing semicolon.
 1 error
 ```
 
-### [gulp-livereload](https://www.npmjs.com/package/gulp-livereload)
-
-Módulo gulp para atualizar o browser ao editar um arquivo.
-
-**Exemplo de Uso:**
-
-**Retorno:**
-
 ### [gulp-minify-css](https://www.npmjs.com/package/gulp-minify-css)
 
 Módulo gulp para minificar arquivos CSS.
@@ -164,7 +184,7 @@ var minifyCss = require('gulp-minify-css');
 gulp.task('exemploGulpMinifyCss', exemploGulpMinifyCss);
 
 function exemploGulpMinifyCss() {
-	return gulp.src(paths.css)
+	gulp.src(paths.css)
 		.pipe(minifyCss())
 		.pipe(gulp.dest(paths.buildCss));
 }

@@ -54,10 +54,6 @@ gulp exemploDeleteFilesFolder
 
 Módulo gulp para adicionar os prefixos dos rederizadores CSS.
 
-**Exemplo de Uso:**
-
-**Retorno:**
-
 ### [gulp-concat](https://www.npmjs.com/package/gulp-concat)
 
 Módulo gulp para concatenar arquivos.
@@ -229,9 +225,39 @@ Módulo gulp para substituir textos em arquivos.
 
 Módulo gulp para adicionar revisão ao nome dos arquivos.
 
-**Exemplo de Uso:**
+**Entrada:**
+
+Arquivos: 
+
+*	exemplo.js 
+*	exemplo.css
+
+**Código:**
+
+```js 
+var rev = require('gulp-rev');
+
+gulp.task('exemploGulpRev', exemploGulpRev);
+
+function exemploGulpRev() {
+	gulp.src(paths.stripComments)
+		.pipe(rev())
+		.pipe(gulp.dest(paths.build));
+}
+```
+
+**Exemplo de Execução:**
+
+```
+gulp exemploGulpRev
+```
 
 **Retorno:**
+
+Arquivos: 
+
+*	exemplo-1100c33912.js
+*	exemplo-1dc94ccd81.css
 
 ### [gulp-strip-comments](https://www.npmjs.com/package/gulp-strip-comments/)
 
@@ -296,22 +322,6 @@ h1 {
 ### [gulp-uglify](https://www.npmjs.com/package/gulp-uglify)
 
 Módulo gulp para minificar arquivos.
-
-**Exemplo de Uso:**
-
-**Retorno:**
-
-### [gulp-uncss](https://www.npmjs.com/package/gulp-uncss/)
-
-Módulo para remover estilos não criados e não utilizados em arquivos CSS.
-
-**Exemplo de Uso:**
-
-**Retorno:**
-
-### [gulp-util](https://www.npmjs.com/package/gulp-util)
-
-Módulo gulp com diversas funções úteis.
 
 **Exemplo de Uso:**
 

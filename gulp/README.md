@@ -209,9 +209,37 @@ Módulo gulp para injetar dependências não declaradas em arquivos AngularJS.
 
 Módulo gulp para renomear arquivos.
 
-**Exemplo de Uso:**
+**Entrada:**
+
+Arquivo:
+
+*	./src/app/jshint/exemplo.js
+
+**Código:**
+
+```js 
+var rename = require("gulp-rename");
+
+gulp.task('exemploGulpRename', exemploGulpRename);
+
+function exemploGulpRename() {
+	gulp.src(paths.jshint)
+		.pipe(rename('teste/teste.js'))
+		.pipe(gulp.dest(paths.build));
+}
+```
+
+**Exemplo de Execução:**
+
+```
+gulp exemploGulpRename
+```
 
 **Retorno:**
+
+Arquivo:
+
+*	./build/teste/teste.js
 
 ### [gulp-replace](https://www.npmjs.com/package/gulp-replace)
 

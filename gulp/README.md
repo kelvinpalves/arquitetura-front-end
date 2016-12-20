@@ -323,6 +323,42 @@ h1 {
 
 Módulo gulp para minificar arquivos.
 
-**Exemplo de Uso:**
+**Entrada:**
+
+```js
+function exemplo(param1, param2) {
+	console.log(param1, param2);
+}
+
+function exemplo02() {
+	console.log('Teste');
+	console.log('Teste 01');
+	console.log('Teste 02');
+}
+```
+
+**Código:**
+
+```js
+var uglify = require('gulp-uglify');
+
+gulp.task('exemploGulpUglify', exemploGulpUglify);
+
+function exemploGulpUglify() {
+	gulp.src(paths.uglify)
+		.pipe(uglify())
+		.pipe(gulp.dest(paths.build));
+}
+```
+
+**Exemplo de Execução:**
+
+```
+gulp exemploGulpUglify
+```
 
 **Retorno:**
+
+```js
+function exemplo(o,e){console.log(o,e)}function exemplo02(){console.log("Teste"),console.log("Teste 01"),console.log("Teste 02")}
+```

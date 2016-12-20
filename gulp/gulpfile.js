@@ -9,15 +9,17 @@ var rename = require('gulp-rename');
 var browserSync = require('browser-sync').create();
 var strip = require('gulp-strip-comments');
 var rev = require('gulp-rev');
+var uglify = require('gulp-uglify');
 
 gulp.task('exemploDeleteFilesFolder', exemploDeleteFilesFolder);
 gulp.task('exemploGulpBrowserSync', exemploGulpBrowserSync);
 gulp.task('exemploGulpAutoPrefixer', exemploGulpAutoPrefixer);
 gulp.task('exemploGulpConcat', exemploGulpConcat);
 gulp.task('exemploGulpJshint', exemploGulpJshint);
+gulp.task('exemploGulpMinifyCss', exemploGulpMinifyCss);
 gulp.task('exemploGulpRev', exemploGulpRev);
 gulp.task('exemploGulpStripComments', exemploGulpStripComments);
-gulp.task('exemploGulpMinifyCss', exemploGulpMinifyCss);
+gulp.task('exemploGulpUglify', exemploGulpUglify);
 
 function exemploDeleteFilesFolder() {
 	del(paths.build);
@@ -67,5 +69,11 @@ function exemploGulpRev() {
 function exemploGulpStripComments() {
 	gulp.src(paths.stripComments)
 		.pipe(strip())
+		.pipe(gulp.dest(paths.build));
+}
+
+function exemploGulpUglify() {
+	gulp.src(paths.uglify)
+		.pipe(uglify())
 		.pipe(gulp.dest(paths.build));
 }

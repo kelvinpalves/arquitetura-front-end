@@ -7,12 +7,14 @@ var minifyCss = require('gulp-minify-css');
 var paths = require('./gulp.config.json');
 var rename = require('gulp-rename');
 var browserSync = require('browser-sync').create();
+var strip = require('gulp-strip-comments');
 
 gulp.task('exemploDeleteFilesFolder', exemploDeleteFilesFolder);
+gulp.task('exemploGulpBrowserSync', exemploGulpBrowserSync);
 gulp.task('exemploGulpAutoPrefixer', exemploGulpAutoPrefixer);
 gulp.task('exemploGulpConcat', exemploGulpConcat);
 gulp.task('exemploGulpJshint', exemploGulpJshint);
-gulp.task('exemploGulpBrowserSync', exemploGulpBrowserSync);
+gulp.task('exemploGulpStripComments', exemploGulpStripComments);
 gulp.task('exemploGulpMinifyCss', exemploGulpMinifyCss);
 
 function exemploDeleteFilesFolder() {
@@ -23,6 +25,16 @@ function exemploGulpAutoPrefixer() {
 	gulp.src(paths.cssAutoPrefixer)
 		.pipe(autoprefixer())
 		.pipe(gulp.dest(paths.build));
+}
+
+function exemploGulpBrowserSync() {
+	browserSync.init({
+		server: {
+			baseDir: './'
+		}
+	});
+
+	gulp.watch('index.html').on('change', browserSync.reload);
 }
 
 function exemploGulpConcat() {
@@ -37,19 +49,15 @@ function exemploGulpJshint() {
 		.pipe(jshint.reporter('default'));
 }
 
-function exemploGulpBrowserSync() {
-	browserSync.init({
-		server: {
-			baseDir: './'
-		}
-	});
-
-	gulp.watch('index.html').on('change', browserSync.reload);
-}
-
 function exemploGulpMinifyCss() {
 	gulp.src(paths.css)
 		.pipe(rename(paths.cssMin))
 		.pipe(minifyCss())
 		.pipe(gulp.dest(paths.buildCss));
+}
+
+function exemploGulpStripComments() {
+	gulp.src(paths.stripComments)
+		.pipe(strip())
+		.pipe(gulp.dest(paths.build));
 }

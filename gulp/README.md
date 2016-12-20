@@ -237,9 +237,61 @@ Módulo gulp para adicionar revisão ao nome dos arquivos.
 
 Módulo para remover os comentários de arquivos CSS, JavaScript e JSON.
 
-**Exemplo de Uso:**
+**Entrada:**
+
+exemplo.js
+```js 
+// gulp-strip-comment deve remover este comentário.
+function exemplo() {
+	// deverá remover este comentário também.
+	console.log("teste");
+}
+```
+
+exemplo.css
+```css 
+/*Deverá remover este comentário*/
+h1 {
+	/*Deverá remover este comentário*/
+	color: red;
+}
+```
+
+**Código:**
+
+```js 
+var strip = require('gulp-strip-comments');
+
+gulp.task('exemploGulpStripComments', exemploGulpStripComments);
+
+function exemploGulpStripComments() {
+	gulp.src(paths.stripComments)
+		.pipe(strip())
+		.pipe(gulp.dest(paths.build));
+}
+```
+
+**Exemplo de Execução:**
+
+```shell
+gulp exemploGulpStripComments
+```
 
 **Retorno:**
+
+exemplo.js
+```js 
+function exemplo() {
+	console.log("teste");
+}
+```
+
+exemplo.css
+```css 
+h1 {
+	color: red;
+}
+```
 
 ### [gulp-uglify](https://www.npmjs.com/package/gulp-uglify)
 

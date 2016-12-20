@@ -1,21 +1,18 @@
-var gulp = require('gulp');
-var autoPrefixer = require('gulp-autoprefixer');
+var browserSync = require('browser-sync').create();
 var concat = require('gulp-concat');
 var del = require('del');
+var gulp = require('gulp');
 var jshint = require('gulp-jshint');
 var minifyCss = require('gulp-minify-css');
 var paths = require('./gulp.config.json');
 var rename = require('gulp-rename');
-var browserSync = require('browser-sync').create();
-var strip = require('gulp-strip-comments');
-var rename = require("gulp-rename");
 var replace = require('gulp-replace');
 var rev = require('gulp-rev');
+var strip = require('gulp-strip-comments');
 var uglify = require('gulp-uglify');
 
 gulp.task('exemploDeleteFilesFolder', exemploDeleteFilesFolder);
 gulp.task('exemploGulpBrowserSync', exemploGulpBrowserSync);
-gulp.task('exemploGulpAutoPrefixer', exemploGulpAutoPrefixer);
 gulp.task('exemploGulpConcat', exemploGulpConcat);
 gulp.task('exemploGulpJshint', exemploGulpJshint);
 gulp.task('exemploGulpMinifyCss', exemploGulpMinifyCss);
@@ -29,19 +26,8 @@ function exemploDeleteFilesFolder() {
 	del(paths.build);
 }
 
-function exemploGulpAutoPrefixer() {
-	gulp.src(paths.cssAutoPrefixer)
-		.pipe(autoprefixer())
-		.pipe(gulp.dest(paths.build));
-}
-
 function exemploGulpBrowserSync() {
-	browserSync.init({
-		server: {
-			baseDir: './'
-		}
-	});
-
+	browserSync.init({server: { baseDir: './' }});
 	gulp.watch('index.html').on('change', browserSync.reload);
 }
 

@@ -28,6 +28,8 @@ function exemploGulpBrowserSync() {
 gulp exemploGulpBrowserSync
 ```
 
+[Voltar Para Raiz](https://github.com/kelvinpalves/arquitetura-front-end)
+
 ### [delete-files-folder](https://github.com/gulpjs/gulp/blob/master/docs/recipes/delete-files-folder.md)
 
 Módulo gulp para remover arquivos e diretórios.
@@ -50,9 +52,13 @@ function exemploDeleteFilesFolder() {
 gulp exemploDeleteFilesFolder
 ```
 
+[Voltar Para Raiz](https://github.com/kelvinpalves/arquitetura-front-end)
+
 ### [gulp-autoprefixer](https://www.npmjs.com/package/gulp-autoprefixer)
 
 Módulo gulp para adicionar os prefixos dos rederizadores CSS.
+
+[Voltar Para Raiz](https://github.com/kelvinpalves/arquitetura-front-end)
 
 ### [gulp-concat](https://www.npmjs.com/package/gulp-concat)
 
@@ -107,6 +113,8 @@ p {
 }
 ```
 
+[Voltar Para Raiz](https://github.com/kelvinpalves/arquitetura-front-end)
+
 ### [gulp-jshint](https://www.npmjs.com/package/gulp-jshint)
 
 Módulo gulp para verificar erro em arquivos JavaScript.
@@ -149,6 +157,8 @@ src/app/jshint/exemplo.js: line 2, col 15, Missing semicolon.
 
 1 error
 ```
+
+[Voltar Para Raiz](https://github.com/kelvinpalves/arquitetura-front-end)
 
 ### [gulp-minify-css](https://www.npmjs.com/package/gulp-minify-css)
 
@@ -197,6 +207,8 @@ gulp exemploGulpMinifyCss
 h1,h2,h3,h4,h5,h6,p{color:red}.quadrado-pequeno{width:100px;height:100px;border:1px solid #000}
 ```
 
+[Voltar Para Raiz](https://github.com/kelvinpalves/arquitetura-front-end)
+
 ### [gulp-ng-annotate](https://www.npmjs.com/package/gulp-ng-annotate/)
 
 Módulo gulp para injetar dependências não declaradas em arquivos AngularJS.
@@ -204,6 +216,8 @@ Módulo gulp para injetar dependências não declaradas em arquivos AngularJS.
 **Exemplo de Uso:**
 
 **Retorno:**
+
+[Voltar Para Raiz](https://github.com/kelvinpalves/arquitetura-front-end)
 
 ### [gulp-rename](https://www.npmjs.com/package/gulp-rename)
 
@@ -240,6 +254,8 @@ gulp exemploGulpRename
 Arquivo:
 
 *	./build/teste/teste.js
+
+[Voltar Para Raiz](https://github.com/kelvinpalves/arquitetura-front-end)
 
 ### [gulp-replace](https://www.npmjs.com/package/gulp-replace)
 
@@ -285,6 +301,8 @@ Teste, Teste
 Exemplo Teste
 ```
 
+[Voltar Para Raiz](https://github.com/kelvinpalves/arquitetura-front-end)
+
 ### [gulp-rev](https://www.npmjs.com/package/gulp-rev)
 
 Módulo gulp para adicionar revisão ao nome dos arquivos.
@@ -322,6 +340,8 @@ Arquivos:
 
 *	exemplo-1100c33912.js
 *	exemplo-1dc94ccd81.css
+
+[Voltar Para Raiz](https://github.com/kelvinpalves/arquitetura-front-end)
 
 ### [gulp-strip-comments](https://www.npmjs.com/package/gulp-strip-comments/)
 
@@ -383,6 +403,8 @@ h1 {
 }
 ```
 
+[Voltar Para Raiz](https://github.com/kelvinpalves/arquitetura-front-end)
+
 ### [gulp-uglify](https://www.npmjs.com/package/gulp-uglify)
 
 Módulo gulp para minificar arquivos.
@@ -426,3 +448,5 @@ gulp exemploGulpUglify
 ```js
 function exemplo(o,e){console.log(o,e)}function exemplo02(){console.log("Teste"),console.log("Teste 01"),console.log("Teste 02")}
 ```
+
+[Voltar Para Raiz](https://github.com/kelvinpalves/arquitetura-front-end)

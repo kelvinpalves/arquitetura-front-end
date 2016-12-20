@@ -217,9 +217,45 @@ Módulo gulp para renomear arquivos.
 
 Módulo gulp para substituir textos em arquivos.
 
-**Exemplo de Uso:**
+**Entrada:**
+
+```
+Isso é um teste do uso do replace.
+
+[TAG], [TAG]
+
+Exemplo [TAG]
+```
+
+**Código:**
+
+```
+var replace = require('gulp-replace');
+
+gulp.task('exemploGulpReplace', exemploGulpReplace);
+
+function exemploGulpReplace() {
+	gulp.src(paths.replace)
+		.pipe(replace('[TAG]', 'Teste'))
+		.pipe(gulp.dest(paths.build));
+}
+```
+
+**Exemplo de Execução:**
+
+```
+gulp exemploGulpReplace
+```
 
 **Retorno:**
+
+```
+Isso é um teste do uso do replace.
+
+Teste, Teste
+
+Exemplo Teste
+```
 
 ### [gulp-rev](https://www.npmjs.com/package/gulp-rev)
 

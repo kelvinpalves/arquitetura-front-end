@@ -8,6 +8,7 @@ var paths = require('./gulp.config.json');
 var rename = require('gulp-rename');
 var browserSync = require('browser-sync').create();
 var strip = require('gulp-strip-comments');
+var replace = require('gulp-replace');
 var rev = require('gulp-rev');
 var uglify = require('gulp-uglify');
 
@@ -17,6 +18,7 @@ gulp.task('exemploGulpAutoPrefixer', exemploGulpAutoPrefixer);
 gulp.task('exemploGulpConcat', exemploGulpConcat);
 gulp.task('exemploGulpJshint', exemploGulpJshint);
 gulp.task('exemploGulpMinifyCss', exemploGulpMinifyCss);
+gulp.task('exemploGulpReplace', exemploGulpReplace);
 gulp.task('exemploGulpRev', exemploGulpRev);
 gulp.task('exemploGulpStripComments', exemploGulpStripComments);
 gulp.task('exemploGulpUglify', exemploGulpUglify);
@@ -58,6 +60,12 @@ function exemploGulpMinifyCss() {
 		.pipe(rename(paths.cssMin))
 		.pipe(minifyCss())
 		.pipe(gulp.dest(paths.buildCss));
+}
+
+function exemploGulpReplace() {
+	gulp.src(paths.replace)
+		.pipe(replace('[TAG]', 'Teste'))
+		.pipe(gulp.dest(paths.build));
 }
 
 function exemploGulpRev() {

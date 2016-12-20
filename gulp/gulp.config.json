@@ -7,5 +7,6 @@
 	"build": "./build/",
 	"jshint": "./src/app/jshint/exemplo.js",
 	"stripComments": "./src/app/strip-comments/**",
-	"uglify": "./src/app/uglify/**"
+	"uglify": "./src/app/uglify/**",
+	"replace": "./src/app/replace/exemplo.txt"
 }

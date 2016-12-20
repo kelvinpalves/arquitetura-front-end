@@ -54,12 +54,6 @@ gulp exemploDeleteFilesFolder
 
 [Voltar Para Raiz](https://github.com/kelvinpalves/arquitetura-front-end)
 
-### [gulp-autoprefixer](https://www.npmjs.com/package/gulp-autoprefixer)
-
-Módulo gulp para adicionar os prefixos dos rederizadores CSS.
-
-[Voltar Para Raiz](https://github.com/kelvinpalves/arquitetura-front-end)
-
 ### [gulp-concat](https://www.npmjs.com/package/gulp-concat)
 
 Módulo gulp para concatenar arquivos.
@@ -206,16 +200,6 @@ gulp exemploGulpMinifyCss
 ```css 
 h1,h2,h3,h4,h5,h6,p{color:red}.quadrado-pequeno{width:100px;height:100px;border:1px solid #000}
 ```
-
-[Voltar Para Raiz](https://github.com/kelvinpalves/arquitetura-front-end)
-
-### [gulp-ng-annotate](https://www.npmjs.com/package/gulp-ng-annotate/)
-
-Módulo gulp para injetar dependências não declaradas em arquivos AngularJS.
-
-**Exemplo de Uso:**
-
-**Retorno:**
 
 [Voltar Para Raiz](https://github.com/kelvinpalves/arquitetura-front-end)
 
